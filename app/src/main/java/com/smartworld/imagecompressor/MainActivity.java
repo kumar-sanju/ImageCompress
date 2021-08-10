@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (txtHeight.getText().toString().isEmpty() || txtWeight.getText().toString().isEmpty()){
-                    Toast.makeText(MainActivity.this,"Fields Can't be Empty.",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,"Height & Width Can't be Empty.",Toast.LENGTH_SHORT).show();
                 } else {
                     int quality = seekQuality.getProgress();
                     int width = Integer.parseInt(txtWeight.getText().toString());
