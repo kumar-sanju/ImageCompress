@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center"
+    android:backgroundTint="@color/white"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp"
+                    android:padding="4dp"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_bg"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imgOriginal"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        />
+                    <TextView
+                        android:id="@+id/txtOriginal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp"
+                    android:padding="4dp"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_bg"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imgCompress"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        />
+                    <TextView
+                        android:id="@+id/txtCompress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                >
+                <EditText
+                    android:id="@+id/txtHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/custom_bg"
+                    android:textAlignment="center"
+                    android:hint="Height"/>
+                <EditText
+                    android:id="@+id/txtWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/custom_bg"
+                    android:textAlignment="center"
+                    android:hint="Width"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textQuality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="Quality: "
+                />
+
+            <SeekBar
+                android:id="@+id/seekQuality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                />
+            <Button
+                android:id="@+id/btnPick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pick Image"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:id="@+id/btnCompress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Compress"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
